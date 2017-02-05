@@ -1,3 +1,3 @@
-import PiecesList from './pieces_list';
+import Pieces from './pieces';
 
-export default PiecesList;
+export default Pieces;
