@@ -1,0 +1,19 @@
+.triangleIcon {
+  display: inline;
+  float: right;
+  margin-bottom: 10px
+}
+
+.hover {
+  polygon {
+    fill: #000000;
+  }
+}
+
+.link--triangleBox {
+  float: right;
+  display: inline;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 0.5em;
+}

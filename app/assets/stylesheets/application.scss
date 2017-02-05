@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+@import '../../../node_modules/foundation-sites/scss/foundation.scss';
+@include foundation-everything($flex: true);
+
+@import 'circle_box';
+@import 'home';
+@import 'square_box';
+@import 'triangle_box';

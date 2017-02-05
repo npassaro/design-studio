@@ -1,3 +1,62 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#home_react_app {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  flex: 0 1 auto;
+}
+.brand-center {
+  padding: 10px;
+  border-radius: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    fill: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+a:hover{
+  color: #cccccc;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.full-vertical {
+  height: 100vh;
+}
+
+.full-vertical .two-thirds {
+  height: 66%;
+}
+.full-vertical .one-third {
+  height: 33%;
+}
+
+.iconBox-enter, .iconBox-appear, .iconBox-leave.iconBox-leave-active {
+  opacity: 0.01;
+}
+
+.iconBox-leave.iconBox-leave-active {
+  transition: opacity 300ms ease-in;
+}
+
+.iconBox-leave, .iconBox-enter.iconBox-enter-active, .iconBox-appear.iconBox-appear-active {
+  opacity: 1;
+}
+
+.iconBox-enter.iconBox-enter-active, .iconBox-appear.iconBox-appear-active {
+  transition: opacity 500ms ease-in;
+}

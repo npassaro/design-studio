@@ -1,0 +1,53 @@
+.squareIcon {
+  display: inline;
+  float: left;
+  margin-top: 10px;
+  padding: 1px;
+}
+
+.hover {
+  rect {
+    fill: #000000;
+  }
+}
+
+.link-list {
+  .link {
+    padding-top: 3em;
+    margin-left: 1em;
+    padding-left: 3em;
+    height: 7em;
+    width: 10em;
+    div, i {
+      display: inline;
+    }
+    div {
+      vertical-align: middle;
+      height: 25px;
+    }
+    a {
+      padding-left: 20px;
+      vertical-align: text-top;
+      margin-left: -20px;
+    }
+    svg {
+      width: 50px;
+    }
+  }
+
+  .link:hover {
+    color: #cccccc;
+    .home-cross {
+      fill: #cccccc;
+      stroke: #cccccc;
+    }
+    a {
+      color: #cccccc;
+    }
+    line {
+      border: #cccccc;
+      fill: #cccccc;
+      stroke: #cccccc;
+    }
+  }
+}
