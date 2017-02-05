@@ -2,7 +2,9 @@ import React, { PropTypes } from 'react';
 import Piece from './piece';
 
 const Pieces = ({ pieces }) =>
-  <div>{pieces.map(p => <Piece key={p.id} piece={p} />)}</div>;
+  <div className="row small-up-2 medium-up-3">
+    {pieces.map(p => <Piece key={p.id} piece={p} />)}
+  </div>;
 
 Pieces.defaultProps = {
   pieces: [],

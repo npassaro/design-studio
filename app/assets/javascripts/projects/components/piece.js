@@ -1,12 +1,23 @@
 import React, { PropTypes } from 'react';
 
-const Piece = ({ piece }) =>
-  <div key={piece.id}>
-    <div>{piece.name}</div>
-    <div>{piece.description}</div>
-    <div><span>{piece.price}</span><span>{piece.currency}</span></div>
-    <img alt={piece.name} src={piece.image_url} />
-  </div>;
+// TODO - http://foundation.zurb.com/sites/docs/card.html
+const Piece = ({ piece }) => {
+  const id = `${piece.type}-${piece.id}`;
+  return (
+    <div className="column">
+      <div className="card" id={id}>
+        <div className="card-divider">
+          <div>{piece.name}</div>
+        </div>
+        <div className="card-section">
+          <div>{piece.description}</div>
+          <div><span>{piece.price}</span><span>{piece.currency}</span></div>
+          <img alt={piece.name} src={piece.image_url} />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 Piece.defaultProps = {
   piece: [],
