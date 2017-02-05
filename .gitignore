@@ -22,3 +22,8 @@
 
 database.yml
 cable.yml
+
+public/javascripts/*
+public/stylesheets/*
+
+node_modules
