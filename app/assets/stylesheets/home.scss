@@ -1,9 +1,3 @@
-#home_react_app {
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-  flex: 0 1 auto;
-}
 .brand-center {
   padding: 10px;
   border-radius: 50px;
@@ -16,13 +10,13 @@
 
 /* unvisited link */
 a:link {
-    color: black;
-    fill: black;
+  color: black;
+  fill: black;
 }
 
 /* visited link */
 a:visited {
-    color: black;
+  color: black;
 }
 
 a:hover{
@@ -35,14 +29,14 @@ a:active {
 }
 
 .full-vertical {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.full-vertical .two-thirds {
-  height: 66%;
+.full-vertical .content-body {
+  min-height: 90%;
 }
-.full-vertical .one-third {
-  height: 33%;
+.full-vertical .content-footer {
+  height: 10%;
 }
 
 .iconBox-enter, .iconBox-appear, .iconBox-leave.iconBox-leave-active {
