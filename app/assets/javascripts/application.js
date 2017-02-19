@@ -1,10 +1,10 @@
-import HomeApp from './home/home_app';
 import ProjectsApp from './projects';
+import menuApp from './menu';
 
 const App = {
   init: function init() {
-    new HomeApp().start();
     new ProjectsApp().start();
+    menuApp();
   },
 };
 

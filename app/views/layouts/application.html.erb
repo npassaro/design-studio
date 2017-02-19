@@ -8,7 +8,15 @@
     <%= javascript_include_tag fingerprinted_asset('application') %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="full-vertical">
+    <div class="row align-top medium-unstack expanded content-body">
+      <div id="menu_app"></div>
+      <div class="columns">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="footer_app" class="row medium-unstack align-bottom expanded content-footer">
+      Footer
+    </div>
   </body>
 </html>
