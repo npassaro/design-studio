@@ -1,5 +1,5 @@
 import ProjectsApp from './projects';
-import menuApp from './menu';
+import menuApp from './side_menu';
 
 const App = {
   init: function init() {
