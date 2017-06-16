@@ -1,1 +1,0 @@
-ASSET_FINGERPRINT = 'ebb118c727aa483ab0da'

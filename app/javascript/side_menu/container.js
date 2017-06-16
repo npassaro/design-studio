@@ -1,6 +1,6 @@
 import React from 'react';
 import LinksList from './links_list';
-import { SquareIcon } from './icons';
+import { SquareIcon } from '../components/icons';
 
 const SideMenu = () =>
   <LinksList

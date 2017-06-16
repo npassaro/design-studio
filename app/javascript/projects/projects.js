@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PiecesList from './projects/components';
+import PiecesList from './components';
 
 export default class ProjectsApp {
   constructor() {

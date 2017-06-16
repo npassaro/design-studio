@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SideMenu from './side_menu/';
+
+import SideMenu from './container';
 
 const renderComponent = (domNode) => {
   ReactDOM.render(<SideMenu />, domNode);
@@ -13,4 +14,7 @@ const start = () => {
   }
 };
 
-export default start;
+
+document.addEventListener('DOMContentLoaded', () => {
+  start();
+});

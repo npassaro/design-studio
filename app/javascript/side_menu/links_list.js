@@ -1,7 +1,8 @@
 import React, { PropTypes, Component, Children } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classnames from 'classnames';
 
-import { CrossIcon } from './icons';
+import { CrossIcon } from '../components/icons';
 
 
 class LinksList extends Component {
@@ -57,7 +58,15 @@ class LinksList extends Component {
         onMouseLeave={this.onMouseLeave}
       >
         {this.renderIcon()}
-        {this.state.isOver ? this.renderLinks() : null}
+        <ReactCSSTransitionGroup
+          transitionName="iconBox"
+          transitionEnter
+          transitionLeave
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={200}
+        >
+          {this.state.isOver ? this.renderLinks() : null}
+        </ReactCSSTransitionGroup>
       </div>
     );
   }
@@ -65,6 +74,15 @@ class LinksList extends Component {
 
 LinksList.propTypes = {
   icon: PropTypes.node.isRequired,
+  className: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+    PropTypes.string,
+  ]).isRequired,
+};
+
+LinksList.defaultProps = {
+  className: '',
 };
 
 
