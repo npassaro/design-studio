@@ -1,7 +1,5 @@
 .triangleIcon {
-  display: inline;
-  float: right;
-  margin-bottom: 10px
+  margin: 1em 1em;
 }
 
 .triangleIcon:hover, .svg-hover {
@@ -11,9 +9,5 @@
 }
 
 .link--triangleBox {
-  float: right;
-  display: inline;
-  white-space: nowrap;
-  text-align: right;
-  padding-right: 0.5em;
+  height: 1em;
 }

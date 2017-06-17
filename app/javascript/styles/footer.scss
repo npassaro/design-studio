@@ -1,0 +1,16 @@
+.footer-element {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container {
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  /* nothing */
+}
+
+.footer-shop {
+  flex-direction: row-reverse;
+}

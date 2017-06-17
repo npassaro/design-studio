@@ -6,7 +6,7 @@ import IconWithHiddenLinks from '../components/icon_with_hidden_links';
 import { CrossIcon } from '../components/icons';
 
 const renderLinks = () =>
-  <div>
+  <div className="side_menu">
     <a href="/works">
       <div className="link">
         <CrossIcon />

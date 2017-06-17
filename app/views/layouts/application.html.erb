@@ -10,13 +10,13 @@
     <%= javascript_pack_tag 'application' %>
   </head>
 
-  <body class="full-vertical">
-    <div class="row align-top medium-unstack expanded content-body">
-      <div id="side_menu_app"></div>
-      <div class="columns">
+  <body style="display:flex;flex-direction:column;">
+    <div style="display:flex;flex-direction:row;">
+      <div id="side_menu_app" style="height:100vh;"></div>
+      <div style="overflow:scroll;">
         <%= yield %>
       </div>
     </div>
-    <div id="footer_app"></div>
+  <div id="footer_app"></div>
   </body>
 </html>

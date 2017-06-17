@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const TriangleIcon = ({ className }) =>
   <svg height="30" width="30" className={classNames(className, 'triangleIcon')}>
-    <polygon points="12,1 24,24 1,24" strokeWidth="1" fill="none" stroke="#000" />
+    <polygon points="13,3 26,26 3,26" strokeWidth="1" fill="none" stroke="#000" />
   </svg>;
 
 TriangleIcon.defaultProps = {
