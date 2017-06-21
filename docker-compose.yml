@@ -1,0 +1,18 @@
+mail:
+  build: .
+  dockerfile: Dockerfile.mailcatcher
+  ports:
+    - "1080:1080"
+    - "1025:1025"
+
+db:
+  env_file: '.env'
+  image: postgres:9.6
+  ports:
+    - "5432:5432"
+
+# cached:
+#     image: memcached
+#     ports:
+#       - "11211:11211"
+#
